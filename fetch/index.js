@@ -26,7 +26,7 @@ async function addNewDestination() {
 async function updateDestination() {
   const data = {
     title: "Pangandaran",
-    Detail: "Pangandarain is beach at Jawa Barat Indonesia",
+    detail: "Pangandarain is beach at Jawa Barat Indonesia",
   };
 
   const response = await fetch(
