@@ -21,4 +21,17 @@ async function addNewDestination() {
   console.log(newDestination);
 }
 
+async function updateDestination() {
+  const response = await axiosInstance.patch(
+    `/posts/63e7a3bd8185f56900e351d1`,
+    {
+      title: "Surabaya",
+      detail: "Surabaya is the capital of Jawa Timur",
+    }
+  );
+  const updateDestinationData = response.data;
+
+  console.log(updateDestinationData);
+}
+
 getDestinations();
